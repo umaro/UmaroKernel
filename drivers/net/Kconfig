@@ -3358,4 +3358,11 @@ config GAN_ETH
           A virutual ethernet device that adds/removes IP/UDP headers,
           as required by Kineto GAN.
 
+config KINETO_GAN
+        tristate "Kineto GAN virtual network interface"
+        depends on ARM
+        default n
+        help
+          Virtual ethernet interface for Kineto GAN transport.
+
 endif # NETDEVICES
